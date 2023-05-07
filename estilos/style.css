@@ -1,13 +1,30 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
 }
 
 :root {
     --background_branco: rgb(236, 236, 236);
+    --background_2: rgb(48, 48, 48);
+    --titulos: rgb(236, 236, 236);
+    --textos: rgb(212, 212, 212);
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    color: var(--titulos);
+}
+
+p, li {
+    color: var(--textos);
 }
 
 body {
@@ -21,11 +38,84 @@ main {
 main .sec-1 {
     height: 100vh;
     flex: 20%;
-    background-color: rebeccapurple;
+    background-color: var(--background_2);
+    border-right: 3px solid black;
+}
+
+main .sec-1 li {
+    text-indent: 15px;
+    cursor: pointer;
+}
+
+main .sec-1 li:hover {
+    background-color: rgb(26, 26, 26);
+}
+
+#ajudaBoard {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(26, 26, 26);
+}
+
+main .sec-1 li {
+    padding: 15px;
+}
+
+main .sec-1 h1 {
+    background-color: rgb(26, 26, 26);
+    padding: 15px;
+    text-align: center;
+    color: white;
 }
 
 main .sec-2 {
     height: 100vh;
     flex: 90%;
-    background-color: yellow;
+}
+
+main .sec-2 .header .topbar {
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .sec-2 .header .topbar h1 {
+    margin-left: 10px;
+}
+
+main .sec-2 .header .topbar select {
+    margin-right: 20px;
+    border: 0;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+main .sec-2 .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card {
+    width: 300px;
+    height: 90px;
+    margin: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgb(179, 179, 179);
+}
+
+.card h1 {
+    font-size: 1.3em;
+    text-align: center;
+    background-color: var(--background_2);
+    color: rgb(--textos);
+}
+
+.card p {
+    padding: 20px;
+    text-align: center;
+    color: black;
 }

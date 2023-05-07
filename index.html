@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scripts/jquery-3.6.4.min.js"></script>
+    <script src="scripts/main.js"></script>
     <link rel="stylesheet" href="estilos/style.css">
-    
     <title>DashBoard</title>
 </head>
 <body>
@@ -15,27 +15,70 @@
             <h1>Tecnológos</h1>
             <ul>
                 <li>DashBoard</li>
-                <li>
-                    Ajuda
-                    <ul>
-                        <li>Documentação</li>
-                        <li>Suporte</li>
-                    </ul>
-                </li>
+                <li id="ajudabutton">ajuda</li>
+                <ul id="ajudaBoard">
+                    <li> > Documentação</li>
+                    <li> > Suporte</li>
+                </ul>
             </ul>
         </section>
         <section class="sec-2">
             <div class="header">
-                <h1>Competêcias</h1>
-                <select name="" id="">
-                    <option value="1">--- Selecione alguma coisa ---</option>
-                    <option value="2">Teste1</option>
-                    <option value="3">Teste2</option>
-                    <option value="4">Teste3</option>
-                </select>
+                <div class="topbar">
+                    <h1 style="color: black;">Competêcias</h1>
+                    <select name="" id="">
+                        <option value="1">--- Selecione alguma coisa ---</option>
+                        <option value="2">Teste1</option>
+                        <option value="3">Teste2</option>
+                        <option value="4">Teste3</option>
+                    </select>
+                </div>
                 <hr>
                 <div class="dashboard">
-                    
+                    <div class="card">
+                        <h1>Número de vendas</h1>
+                        <p>?</p>
+                    </div>
+
+                    <div class="card">
+                        <h1>total de vendas</h1>
+                        <p>?</p>
+                    </div>
+
+                    <div class="card">
+                        <h1>clientes ativos</h1>
+                        <p>?</p>
+                    </div>
+
+                    <div class="card">
+                        <h1>clientes inativos
+                        </h1>
+                        <p>?</p>
+                    </div>
+
+                    <div class="card">
+                        <h1>total de reclamações
+                        </h1>
+                        <p>?</p>
+                    </div>
+
+                    <div class="card">
+                        <h1>total de elogios
+                        </h1>
+                        <p>?</p>
+                    </div>
+
+                    <div class="card">
+                        <h1>total de despesas
+                        </h1>
+                        <p>?</p>
+                    </div>
+
+                    <div class="card">
+                        <h1>total de sugestões
+                        </h1>
+                        <p>?</p>
+                    </div>
                 </div>
             </div>
         </section>
