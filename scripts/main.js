@@ -22,7 +22,6 @@ $(window).ready( () => {
             ajudaBoardDebounce = false
 
             setTimeout(AjudaDebounce, 1600)
-            $('#ajudabutton').css("background-color", "rgb(26, 26, 26)")
         }else if(!ajudaBoard && ajudaBoardDebounce) {
             $('#ajudaBoard').animate({
                 "height": "0px"
@@ -32,7 +31,20 @@ $(window).ready( () => {
             ajudaBoardDebounce = false
 
             setTimeout(AjudaDebounce, 1600)
-            setTimeout(() => {$('#ajudabutton').css("background-color", "rgb(48, 48, 48)")}, 1500)
         }
+    })
+
+    // requisições ajax
+
+    $("#dashboardbutton").on("click", () =>{
+        $("#header").load("paginas/dashboard.html")
+    })
+
+    $("#documentacaobutton").on("click", () => {
+        $("#header").load("paginas/documentacao.html")
+    });
+
+    $("#suportebutton").on("click", () =>{
+        $("#header").load("paginas/suporte.html")
     })
 })

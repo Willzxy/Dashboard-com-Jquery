@@ -48,7 +48,8 @@ main .sec-1 li {
 }
 
 main .sec-1 li:hover {
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(4, 7, 19);
+    transition: 0.5s;
 }
 
 #ajudaBoard {
@@ -56,6 +57,11 @@ main .sec-1 li:hover {
     height: 100%;
     overflow: hidden;
     background-color: rgb(26, 26, 26);
+}
+
+main .sec-1 ul > li {
+    display: flex;
+    align-items: center;
 }
 
 main .sec-1 li {
@@ -96,6 +102,12 @@ main .sec-2 .dashboard {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+main .sec-2 .documentacao {
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: justify;
 }
 
 .card {
